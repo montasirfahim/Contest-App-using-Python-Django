@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Problems</title>
+</head>
+<body>
+    <h1>Problems</h1>
+     <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Problem Title</th>
+                <th>Problem Description</th>
+                <th>Difficulty</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for problem in page_obj %}
+            <tr>
+                <td>{{ problem.title }}</td>
+                <td>{{ problem.description }}</td>
+                <td>{{ problem.difficulty }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div>
+        <span>Page: {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+        {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
+        {% endif %}
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">Next</a>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+from na_proj import utils
 import pymysql
 pymysql.install_as_MySQLdb()
 
@@ -82,8 +83,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'na_db',
-        'USER': 'root',
-        'PASSWORD': 'Fahim.1128@',
+        'USER': utils.get_username(),
+        'PASSWORD': utils.get_password(),
         'HOST': '127.0.0.1',
         'PORT': '3307',
     }

@@ -7,7 +7,7 @@ It is designed to be simple, easy to understand, and extendable for other featur
 
 However, I did not focus on front-end. I will design a better user-friendly interface latter.
 
-### You may visit my [Portfolio](https://montasirfahim.github.io/Portfolio/) website to explore my all projects and know more about me in one place 
+#### You may visit my [Portfolio](https://montasirfahim.github.io/Portfolio/) website to explore my all projects and know more about me in one place 
 
 ---
 ## Features
@@ -17,7 +17,7 @@ However, I did not focus on front-end. I will design a better user-friendly inte
 - Problems and Submissions List.
 - Easy to extend and modify.
 
----
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
@@ -27,7 +27,7 @@ Before you begin, ensure you have met the following requirements:
 - **Database**: SQLite (default) or any other database (can be configured in `settings.py`).
 - **Git** to clone the repository.
 
----
+
 ## Getting Started
 
 ### Step 1: Clone the Repository
